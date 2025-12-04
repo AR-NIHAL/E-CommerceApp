@@ -1,4 +1,5 @@
-import 'package:ecommerce_app/views/widgets/splash_screen.dart';
+import 'package:ecommerce_app/views/screens/homescreen.dart';
+import 'package:ecommerce_app/views/screens/onboarding_screen/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,12 +9,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: SplashScreen(),
+    return const MaterialApp(
+      home: OnboardingScreen(),
     );
-      
   }
 }
